@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+			<de.hdodenhof.circleimageview.CircleImageView
+				android:id="@+id/imageView"
+				android:layout_width="128dp"
+				android:layout_height="128dp"
+				android:layout_gravity="center"
+				android:layout_margin="32dp"
+				android:foreground="@drawable/avatar"
+				android:background="@drawable/corner_radius" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="8dp"
+                        android:fontFamily="@font/montserrat"
+                        android:letterSpacing="0.128"
+                        android:textColor="@color/tertiary"
+                        android:textSize="16sp"
+                        android:text="Имя" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:minHeight="48dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:fontFamily="@font/raleway"
+                        android:letterSpacing="0.128"
+                        android:textColor="@color/gray_3"
+                        android:textSize="16sp"
+                        android:text="@string/profile_name"
+                        android:background="@drawable/corner_radius" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="8dp"
+                        android:fontFamily="@font/montserrat"
+                        android:letterSpacing="0.128"
+                        android:textColor="@color/tertiary"
+                        android:textSize="16sp"
+                        android:text="Фамилия" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:minHeight="48dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:fontFamily="@font/raleway"
+                        android:letterSpacing="0.128"
+                        android:textColor="@color/gray_3"
+                        android:textSize="16sp"
+                        android:text="@string/profile_surname"
+                        android:background="@drawable/corner_radius" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginHorizontal="32dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:fontFamily="@font/montserrat"
+                    android:letterSpacing="0.128"
+                    android:textColor="@color/tertiary"
+                    android:textSize="16sp"
+                    android:text="Описание" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="48dp"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:fontFamily="@font/raleway"
+                    android:letterSpacing="0.128"
+                    android:textColor="@color/gray_3"
+                    android:textSize="16sp"
+                    android:text="@string/profile_description"
+                    android:background="@drawable/corner_radius" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginHorizontal="32dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:fontFamily="@font/montserrat"
+                    android:letterSpacing="0.128"
+                    android:textColor="@color/tertiary"
+                    android:textSize="16sp"
+                    android:text="Исходный код" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="48dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:fontFamily="@font/raleway"
+                    android:letterSpacing="0.128"
+                    android:textColorLink="@color/gray_3"
+                    android:textSize="16sp"
+                    android:text="@string/profile_source"
+                    android:background="@drawable/corner_radius"
+                    android:autoLink="web" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginHorizontal="32dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:fontFamily="@font/montserrat"
+                    android:letterSpacing="0.128"
+                    android:textColor="@color/tertiary"
+                    android:textSize="16sp"
+                    android:text="Дизайн макет" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="48dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:fontFamily="@font/raleway"
+                    android:letterSpacing="0.128"
+                    android:textColorLink="@color/gray_3"
+                    android:textSize="16sp"
+                    android:text="@string/profile_design"
+                    android:background="@drawable/corner_radius"
+                    android:autoLink="web" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginHorizontal="32dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:fontFamily="@font/montserrat"
+                    android:letterSpacing="0.128"
+                    android:textColor="@color/tertiary"
+                    android:textSize="16sp"
+                    android:text="Связь со мной" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="48dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:fontFamily="@font/raleway"
+                    android:letterSpacing="0.128"
+                    android:textColorLink="@color/gray_3"
+                    android:textSize="16sp"
+                    android:text="@string/profile_contact"
+                    android:background="@drawable/corner_radius"
+                    android:autoLink="web" />
+            </LinearLayout>
+			<TextView
+				android:id="@+id/buttonView1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="32dp"
+				android:clickable="true"
+				android:fontFamily="@font/montserrat_medium"
+				android:letterSpacing="0.128"
+				android:paddingVertical="16dp"
+				android:text="@string/button_profile_1"
+				android:textAlignment="center"
+				android:textColor="@color/tertiary"
+				android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+    <include
+        layout="@layout/button"
+        android:id="@+id/navbarButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

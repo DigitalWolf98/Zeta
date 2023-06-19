@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="192dp"
+                android:layout_height="192dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/icon_logotype"
+                android:foreground="@drawable/brand_logotype_foreground"
+                android:scaleType="fitCenter"
+                android:scaleX="1.25"
+                android:scaleY="1.25" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="-64dp"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="@font/montserrat_black"
+                android:letterSpacing="0.128"
+                android:text="@string/app_name"
+                android:textAlignment="center"
+                android:textColor="@color/primary"
+                android:textSize="64sp" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/discountCard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/card_background"
+                android:padding="8dp">
+                <TextView
+                    android:id="@+id/discountTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/card_product"
+                    android:textColor="@color/gray_1"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/discountImage"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/discountImage" />
+                <TextView
+                    android:id="@+id/discountText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/raleway_medium"
+                    android:text="@string/card_discount"
+                    android:textColor="@color/gray_1"
+                    android:textSize="32sp"
+                    app:layout_constraintEnd_toStartOf="@+id/discountImage"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/discountTitle" />
+                <ImageView
+                    android:id="@+id/discountImage"
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:layout_marginEnd="8dp"
+                    android:scaleType="fitCenter"
+                    android:scaleX="1.25"
+                    android:scaleY="1.25"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/tables_a_2" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginVertical="16dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="16dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:letterSpacing="0.128"
+                    android:text="@string/label_category"
+                    android:textColor="@color/tertiary"
+                    android:textSize="16sp" />
+                <LinearLayout
+                    android:id="@+id/chipButtons"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/raleway_medium"
+                        android:text="@string/chip_button_1"
+                        android:textColor="@color/gray_1" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/raleway_medium"
+                        android:text="@string/chip_button_2"
+                        android:textColor="@color/gray_1" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="16dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:letterSpacing="0.128"
+                    android:text="@string/label_product"
+                    android:textColor="@color/tertiary"
+                    android:textSize="16sp" />
+
+				<GridLayout
+					android:id="@+id/gridLayout"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:layout_margin="8dp"
+					android:useDefaultMargins="true"
+					android:columnCount="2" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include
+        layout="@layout/button"
+        android:id="@+id/navbarButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

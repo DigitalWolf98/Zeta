@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PreviewActivity">
+    <include
+        layout="@layout/gesture"
+        android:id="@+id/navbarGesture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="46dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginHorizontal="16dp"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:background="@drawable/corner_radius">
+
+                <ImageView
+                    android:id="@+id/cardImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="384dp"
+                    android:clickable="true"
+                    android:contentDescription="@string/label_product"
+                    app:srcCompat="@drawable/tables_a_2" />
+                <TextView
+                    android:id="@+id/cardTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="24sp"
+                    android:letterSpacing="0.128"
+                    android:text="Assassin's Creed"
+                    android:textColor="@color/tertiary"/>
+                <TextView
+                    android:id="@+id/cardAbout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/raleway"
+                    android:textSize="16sp"
+                    android:letterSpacing="0.128"
+                    android:text="Lorem"
+                    android:textColor="@color/gray_3"/>
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/corner_radius"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:letterSpacing="0.128"
+                    android:text="@string/label_price"
+                    android:textColor="@color/gray_3"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/cartPlus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/icon_plus" />
+
+                    <TextView
+                        android:id="@+id/cartCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="8dp"
+                        android:fontFamily="@font/montserrat"
+                        android:letterSpacing="0.128"
+                        android:text="1"
+                        android:textColor="@color/gray_3"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/cartMinus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/icon_minus" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/cardPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/montserrat"
+                    android:letterSpacing="0.128"
+                    android:text="428$"
+                    android:textColor="@color/primary"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView3" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/buttonAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginVertical="16dp"
+                android:padding="16dp"
+                android:background="@drawable/corner_radius">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/textView"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/button_card"
+                    app:tint="@color/gray_3" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center"
+                    android:letterSpacing="0.128"
+                    android:text="@string/button_add"
+                    android:textColor="@color/gray_3"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <Button
+                android:id="@+id/buttonBuy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:letterSpacing="0.128"
+                android:paddingVertical="16dp"
+                android:text="@string/button_buy"
+                android:textColor="@color/gray_1"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

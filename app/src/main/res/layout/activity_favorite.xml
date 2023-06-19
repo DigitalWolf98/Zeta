@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FavoriteActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="192dp"
+                android:layout_height="192dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/icon_logotype"
+                android:foreground="@drawable/brand_logotype_foreground"
+                android:scaleType="fitCenter"
+                android:scaleX="1.25"
+                android:scaleY="1.25" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="-64dp"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="@font/montserrat_black"
+                android:letterSpacing="0.128"
+                android:text="@string/app_name"
+                android:textAlignment="center"
+                android:textColor="@color/primary"
+                android:textSize="64sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginVertical="16dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="16dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:letterSpacing="0.128"
+                    android:text="@string/label_action"
+                    android:textColor="@color/tertiary"
+                    android:textSize="16sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/chipButton1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/raleway_medium"
+                        android:text="@string/button_buy_all"
+                        android:textColor="@color/gray_1" />
+                    <Button
+                        android:id="@+id/chipButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="8dp"
+                        android:fontFamily="@font/raleway_medium"
+                        android:text="@string/button_del_all"
+                        android:textColor="@color/gray_3" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="16dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:letterSpacing="0.128"
+                    android:text="@string/label_favorite"
+                    android:textColor="@color/tertiary"
+                    android:textSize="16sp" />
+                <GridLayout
+                    android:id="@+id/gridLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:useDefaultMargins="true"
+                    android:columnCount="2" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include
+        layout="@layout/button"
+        android:id="@+id/navbarButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

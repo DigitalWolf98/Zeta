@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ForgotActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="192dp"
+                android:layout_height="192dp"
+                android:layout_gravity="center_horizontal"
+                android:foreground="@drawable/brand_logotype_foreground"
+                android:contentDescription="@string/icon_logotype"
+                android:scaleType="fitCenter"
+                android:scaleX="1.25"
+                android:scaleY="1.25" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="-64dp"
+                android:layout_marginEnd="32dp"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/app_name"
+                android:fontFamily="@font/montserrat_black"
+                android:textAlignment="center"
+                android:textSize="64sp"
+                android:letterSpacing="0.128"
+                android:textColor="@color/primary" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:letterSpacing="0.128"
+                android:text="@string/label_mail"
+                android:textAlignment="viewStart"
+                android:textColor="@color/tertiary"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/corner_radius"
+                android:orientation="horizontal"
+                android:paddingHorizontal="4dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/icon_mail"
+                    android:foreground="@drawable/icon_mail"
+                    android:scaleType="fitCenter" />
+
+                <EditText
+                    android:id="@+id/field1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="emailAddress"
+                    android:background="@color/gray_0"
+                    android:fontFamily="@font/raleway"
+                    android:hint="@string/field_placeholder"
+                    android:inputType="textEmailAddress"
+                    android:letterSpacing="0.128"
+                    android:minHeight="48dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/gray_3"
+                    android:textSize="16sp"
+                    tools:ignore="VisualLintTextFieldSize" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:letterSpacing="0.128"
+                android:text="@string/label_captcha"
+                android:textAlignment="viewStart"
+                android:textColor="@color/tertiary"
+                android:textSize="20sp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:clickable="true"
+                android:background="@drawable/corner_radius"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <CheckBox
+                        android:id="@+id/field2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="8dp"
+                        android:checked="false"
+                        android:clickable="false"
+                        android:contentDescription="@string/icon_captcha" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginHorizontal="8dp"
+                        android:fontFamily="@font/raleway_bold"
+                        android:letterSpacing="0.128"
+                        android:text="@string/label_robot"
+                        android:textColor="@color/gray_3"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:paddingVertical="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:letterSpacing="0.128"
+                android:text="@string/button_recover"
+                android:textColor="@color/gray_1"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:letterSpacing="0.128"
+                android:text="@string/label_connect"
+                android:textAlignment="center"
+                android:textColor="@color/tertiary"
+                android:textSize="16sp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/corner_radius"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:paddingHorizontal="4dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingVertical="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="8dp"
+                        android:contentDescription="@string/icon_google"
+                        android:foreground="@drawable/icon_google"
+                        android:scaleType="fitCenter" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/montserrat_black"
+                        android:gravity="center_vertical"
+                        android:layout_marginHorizontal="8dp"
+                        android:letterSpacing="0.128"
+                        android:text="@string/label_google"
+                        android:textColor="@color/gray_3"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="32dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:letterSpacing="0.128"
+                android:paddingVertical="16dp"
+                android:text="@string/button_account_1"
+                android:textAlignment="center"
+                android:textColor="@color/tertiary"
+                android:textSize="14sp"
+                android:clickable="true" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

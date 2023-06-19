@@ -1,0 +1,75 @@
+<resources>
+	<string name="app_name">Zeta</string>
+	<string name="app_text">Будущее в Вашем доме,\nс Нашей Мебелью!</string>
+
+	<string name="icon_logotype">Логотип приложения</string>
+	<string name="icon_person">Иконка профиля</string>
+	<string name="icon_padlock">Иконака замка</string>
+	<string name="icon_mail">Иконка почты</string>
+	<string name="icon_google">Иконка гугла</string>
+	<string name="icon_captcha">Иконка каптчи</string>
+	<string name="icon_change">Иконка изменить</string>
+
+	<string name="label_mail">Почта</string>
+	<string name="label_login">Логин</string>
+	<string name="label_password">Пароль</string>
+	<string name="label_confirm">Повтор</string>
+	<string name="label_captcha">Проверка</string>
+	<string name="label_gesture">Описание</string>
+
+	<string name="label_connect">Войти с помощью</string>
+	<string name="label_google">Google</string>
+
+	<string name="label_robot">Я не робот!</string>
+
+	<string name="label_category">Категории</string>
+	<string name="label_product">Товары</string>
+	<string name="label_action">Действия</string>
+	<string name="label_favorite">Избранное</string>
+	<string name="label_cart">Корзина</string>
+
+	<string name="label_price">Цена:</string>
+
+	<string name="label_true">Заказано</string>
+	<string name="true_text">Ваш заказ принят!\nНа Вашу почту\nотправлено письмо,\nс дополнительной информацией\nдля уточнения деталей заказа.</string>
+	<string name="label_false">Отменено</string>
+	<string name="false_text">Ваш заказ не принят.\nНа вашу почту\nотправлено письмо,\nс дополнительной информацией\nдля устранения ошибки.</string>
+
+	<string name="chip_button_1">Стулья</string>
+	<string name="chip_button_2">Столы</string>
+
+	<string name="toast_service">Эта служба временно\nне поддерживается!</string>
+
+	<string name="button_signup">Регистрация</string>
+	<string name="button_signin">Авторизация</string>
+	<string name="button_save">Сохранить</string>
+	<string name="button_recover">Восстановление</string>
+	<string name="button_forgot">Забыли пароль?</string>
+	<string name="button_account_0">Нет аккаунта?\n</string>
+	<string name="button_account_1">Есть аккаунт?\n</string>
+	<string name="button_profile_0">Связаться с\n</string>
+	<string name="button_profile_1">Вернуться в\n</string>
+	<string name="button_true">Спасибо</string>
+	<string name="button_false">Повторить</string>
+	<string name="button_add">Добавить</string>
+	<string name="button_buy">Оформить</string>
+	<string name="button_buy_all">Купить</string>
+	<string name="button_del_all">Очистить</string>
+
+	<string name="field_enter">Введите</string>
+	<string name="field_placeholder">%1$s %2$s</string>
+
+	<string name="card_product">На %1$s\n%2$s\nСкидки до</string>
+	<string name="card_discount">%1$s%%</string>
+	<string name="card_price">%1$s₸</string>
+
+	<string name="chair_about">Это игровое кресло обеспечивает комфорт благодаря своей эргономичной форме и мягкой подушке.</string>
+	<string name="table_about">Этот игровой стол излучает премиальность в каждой детали, не имеющую себе равных ни у одного другого конкурента.</string>
+
+	<string name="profile_name">Владислав</string>
+	<string name="profile_surname">Рыхтиков</string>
+	<string name="profile_source">https://clck.ru/34UYbH</string>
+	<string name="profile_design">https://clck.ru/34UYaA</string>
+	<string name="profile_contact">https://t.me/ScriptDev</string>
+	<string name="profile_description">Данное приложение создано специально для дипломного проекта.</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectResources">
+    <resource url="http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd" location="$USER_HOME$/AppData/Local/Google/AndroidStudio2022.1/extResources/7cf46fe7_hibernate-configuration-3.0.dtd" />
+    <resource url="http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd" location="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate.orm/hibernate-core/6.2.0.CR3/92a51dc03d86c692ccab0751d4db09bfb4c124a7/hibernate-core-6.2.0.CR3-sources.jar!/org/hibernate/hibernate-configuration-3.0.dtd" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

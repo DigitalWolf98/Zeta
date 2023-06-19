@@ -1,0 +1,79 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'ru.script_dev.zeta'
+    compileSdk 33
+
+	signingConfigs {
+		debug {
+			storeFile file('D:/Projects/ZetaApp/zeta.keystore')
+			storePassword '1%Q0eis93&E%'
+			keyAlias 'zeta'
+			keyPassword '1%Q0eis93&E%'
+		}
+		release {
+			storeFile file("D:/Projects/ZetaApp/zeta.keystore")
+			storePassword "1%Q0eis93&E%"
+			keyAlias "zeta"
+			keyPassword "1%Q0eis93&E%"
+		}
+	}
+
+    defaultConfig {
+        applicationId "ru.script_dev.zeta"
+        minSdk 26
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+		debug {
+			minifyEnabled false
+			signingConfig signingConfigs.debug
+			proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+		}
+
+        release {
+            minifyEnabled false
+			signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    packagingOptions {
+        exclude 'META-INF/AL2.0'
+        exclude 'META-INF/LGPL2.1'
+        exclude 'META-INF/NOTICE.md'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE.md'
+        exclude 'META-INF/LICENSE'
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.android.gms:play-services-auth:20.5.0'
+    implementation 'com.google.android.gms:play-services-safetynet:18.0.1'
+    implementation 'com.zaxxer:HikariCP:3.4.5'
+    implementation 'org.mariadb.jdbc:mariadb-java-client:2.4.4'
+    implementation 'androidx.gridlayout:gridlayout:1.0.0'
+    implementation 'com.google.code.gson:gson:2.10.1'
+    implementation 'com.sun.mail:android-mail:1.6.7'
+    implementation 'com.sun.mail:android-activation:1.6.7'
+	implementation 'de.hdodenhof:circleimageview:3.1.0'
+	testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}

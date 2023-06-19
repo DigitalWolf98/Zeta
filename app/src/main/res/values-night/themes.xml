@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Zeta.NoActionBar" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/gray_1</item>
+        <item name="colorPrimaryDark">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorOnSecondary">@color/gray_1</item>
+        <item name="colorSecondaryVariant">@color/secondary</item>
+        <!-- Tertiary brand color. -->
+        <item name="colorTertiary">@color/tertiary</item>
+        <item name="colorOnTertiary">@color/gray_1</item>
+        <!-- Surface brand color. -->
+        <item name="colorSurface">@color/primary</item>
+        <item name="colorOnSurface">@color/gray_1</item>
+        <item name="colorPrimarySurface">@color/gray_3</item>
+        <item name="colorOnPrimarySurface">@color/gray_1</item>
+        <item name="colorSurfaceVariant">@color/primary</item>
+        <item name="colorOnSurfaceVariant">@color/primary</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorSecondary</item>
+        <item name="android:navigationBarColor">?attr/colorPrimary</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.Zeta" parent="Theme.Zeta.NoActionBar">
+        <item name="android:windowDisablePreview">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/gray_3</item>
+        <item name="android:textColor">@color/gray_1</item>
+    </style>
+</resources>

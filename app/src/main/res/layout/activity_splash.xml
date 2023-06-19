@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity">
+
+    <ImageView
+        android:id="@+id/splashLogotype"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_marginTop="128dp"
+        android:foreground="@drawable/brand_logotype_foreground"
+        android:contentDescription="@string/icon_logotype"
+        android:scaleType="fitCenter"
+        android:scaleX="1.25"
+        android:scaleY="1.25"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/splashTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-64dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center_horizontal|center_vertical"
+        android:letterSpacing="0.125"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="@color/primary"
+        android:textSize="64sp"
+        app:layout_constraintEnd_toEndOf="@+id/splashLogotype"
+        app:layout_constraintStart_toStartOf="@+id/splashLogotype"
+        app:layout_constraintTop_toBottomOf="@+id/splashLogotype" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/raleway_black"
+        android:gravity="center"
+        android:letterSpacing="0.125"
+        android:text="@string/app_text"
+        android:textAlignment="center"
+        android:textColor="@color/tertiary"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/splashTitle"
+        app:layout_constraintStart_toStartOf="@+id/splashTitle"
+        app:layout_constraintTop_toBottomOf="@+id/splashTitle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

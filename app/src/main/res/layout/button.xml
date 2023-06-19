@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:padding="4dp"
+    android:orientation="horizontal"
+    android:background="@color/primary">
+
+    <LinearLayout
+        android:id="@+id/navbarButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_margin="8dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            app:srcCompat="@drawable/button_home" />
+
+        <View
+            android:layout_width="32dp"
+            android:layout_height="4dp"
+            android:layout_gravity="center"
+            android:background="@drawable/corner_radius"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/navbarButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_margin="8dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            app:srcCompat="@drawable/button_card" />
+
+        <View
+            android:layout_width="32dp"
+            android:layout_height="4dp"
+            android:layout_gravity="center"
+            android:background="@drawable/corner_radius" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/navbarButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_margin="8dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            app:srcCompat="@drawable/button_favorite" />
+
+        <View
+            android:layout_width="32dp"
+            android:layout_height="4dp"
+            android:layout_gravity="center"
+            android:background="@drawable/corner_radius"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/navbarButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_margin="8dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            app:srcCompat="@drawable/button_profile" />
+
+        <View
+            android:layout_width="32dp"
+            android:layout_height="4dp"
+            android:layout_gravity="center"
+            android:background="@drawable/corner_radius"/>
+
+    </LinearLayout>
+</LinearLayout>
